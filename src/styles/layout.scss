@@ -17,4 +17,12 @@
 
 .app-content {
   padding: 6px;
+  height: 100%;
+  .spin-wrap {
+    height: 100%;
+  }
+  // 修改spin居中
+  .ant-spin-nested-loading > div > .ant-spin {
+    max-height: 100%;
+  }
 }
