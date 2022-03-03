@@ -18,14 +18,17 @@ const Register: React.FC<any> = () => {
             <Form.Item name='password' rules={[{ message: '密码不能为空', required: true }]}>
               <Input prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />} type='password' placeholder='请输入密码' />
             </Form.Item>
-            <Form.Item name='password' rules={[{ message: '密码不能为空', required: true }]}>
+            <Form.Item name='new_password' rules={[{ message: '密码不能为空', required: true }]}>
               <Input prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />} type='password' placeholder='请再次输入密码' />
             </Form.Item>
             <Form.Item>
               <Button block type='primary' htmlType='submit'>
-                登录
+                注册
               </Button>
             </Form.Item>
+            {/* <Form.Item noStyle>
+              <a>已注册，请登录</a>
+            </Form.Item> */}
           </Form>
         </div>
       </div>
