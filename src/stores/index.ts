@@ -1,3 +1,9 @@
-export type RootStoreInterface = {}
+import { LoadingStore } from './loading'
 
-export const rootStore = {}
+export type RootStoreInterface = {
+  loadingInstance: LoadingStore
+}
+
+export const rootStore = {
+  loadingInstance: new LoadingStore(),
+}
