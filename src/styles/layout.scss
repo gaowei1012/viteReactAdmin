@@ -1,0 +1,20 @@
+@import './common.scss';
+
+// app header
+.app-header {
+  background-color: $bg_cm;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 0;
+  .app-trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+}
+
+.app-content {
+  padding: 6px;
+}
