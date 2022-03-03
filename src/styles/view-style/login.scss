@@ -1,0 +1,46 @@
+.login {
+  background: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+  background-size: cover;
+  overflow: hidden;
+  .model {
+    height: 96vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-form {
+      padding: 2rem;
+      box-shadow: 0px 2px 13px 0px rgba(228, 228, 228, 0.8);
+      border-radius: 5px;
+      background-color: #fff;
+      width: 38rem;
+
+      .input {
+        margin: 10px 0 20px 0;
+      }
+
+      .login-form-button {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+    .register {
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.45);
+    }
+    .register > span {
+      color: #1890ff;
+      cursor: pointer;
+    }
+
+    // 修改密码
+    .change_password_form {
+      padding: 2rem;
+      box-shadow: 0px 2px 13px 0px rgba(228, 228, 228, 0.8);
+      border-radius: 5px;
+      background-color: #fff;
+      width: 48rem;
+    }
+  }
+}
