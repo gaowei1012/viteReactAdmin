@@ -1,11 +1,11 @@
 import React from 'react'
-import { useLocalStore } from 'mobx-react-lite'
+import { useLocalObservable } from 'mobx-react-lite'
 import { rootStore, RootStoreInterface } from '../stores/index'
 
 const storeContext = React.createContext<RootStoreInterface | null>(null)
 
 export const StoreProvider = ({ children }: { children: React.ReactNode }) => {
-  const store = useLocalStore(() => rootStore)
+  const store = useLocalObservable(() => rootStore)
   return <storeContext.Provider value={store}>{children}</storeContext.Provider>
 }
 

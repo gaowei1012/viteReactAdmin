@@ -1,0 +1,40 @@
+@import '../common.scss';
+
+.org_container {
+  padding: 12px;
+  background-color: $bg_cm;
+  height: 85vh;
+
+  .tree_title_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    .right {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 140px;
+      justify-content: space-around;
+    }
+  }
+}
+
+.organize_detail {
+  padding: 12px;
+  height: 85vh;
+  background-color: $bg_cm;
+  .header {
+    margin-top: 20px;
+  }
+  .edit {
+    cursor: pointer;
+  }
+}
+
+// fix antd tree style
+.ant-tree-switcher {
+  height: 30px;
+  line-height: 30px;
+}

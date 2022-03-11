@@ -1,0 +1,15 @@
+@import '../common.scss';
+.usercenter_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg_home;
+    padding: 20px;
+    .site-layout-background {
+        background: #fff;
+    }
+    .ant-menu,
+    .ant-menu-sub,
+    .ant-menu-inline {
+        background-color: #fff !important;
+    }
+}

@@ -1,0 +1,65 @@
+    @import '../common.scss';
+    .sys_container {
+        background-color: $bg_cm;
+        padding: 12px;
+        // height: 86vh;
+        .left_wrap {
+            height: 86vh;
+            border-right: 1px solid rgba($color: #ddd, $alpha: 0.3);
+            padding-right: 6px;
+            overflow: auto;
+            .left_tree {
+                height: 42px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .com_flow {
+                    display: flex;
+                    align-items: center;
+                    .search {
+                        cursor: pointer;
+                        color: #7e7a7a;
+                        margin-right: 10px;
+                    }
+                    .tree_title_wrap {
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        // detail page
+        .sys_detail {
+            background-color: $bg_cm;
+            padding: 12px;
+            height: 85vh;
+            .detail_content {
+                margin-top: 30px;
+                .divider {
+                    height: 300px;
+                }
+            }
+            .detail_swict {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+        // fix antd tree style
+        .ant-tree-node-content-wrapper {
+            height: 30px;
+            line-height: 30px;
+        }
+        .ant-tree-switcher {
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+    
+    .right_content {
+        padding: 6px;
+    }

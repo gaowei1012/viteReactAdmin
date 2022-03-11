@@ -1,0 +1,25 @@
+.tree {
+  background-color: #fff;
+  .tree_title_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    .right {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 140px;
+      justify-content: space-around;
+    }
+  }
+  .ant-tree-node-content-wrapper {
+    height: 30px;
+    line-height: 30px;
+  }
+  .ant-tree-switcher {
+    height: 30px;
+    line-height: 30px;
+  }
+}

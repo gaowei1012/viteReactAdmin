@@ -1,0 +1,80 @@
+.role_container__flow {
+  padding: 12px;
+  background-color: #fff;
+  height: 86vh;
+
+  & .role_header__flow {
+    background-color: #f1eded;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 1px 2px 0px #e0dbdb;
+    margin-bottom: 6px;
+  }
+
+  & .role_table__flow {
+    padding: 10px;
+  }
+}
+
+.role_detail_container_flow {
+  height: 100%;
+  margin: 4px;
+  padding: 2px;
+  border-radius: 3px;
+
+  & .role_api_total {
+    min-height: 32px;
+    border-radius: 3px;
+    border: none;
+    padding: 2px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px rgba(170, 166, 166, 0.4);
+  }
+
+  & .role_api_total .l__back {
+    margin: 4px 0;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    color: #1890ff;
+  }
+
+  & .role_api_total .c__content_flow {
+    margin: 8px 8px;
+  }
+
+  & .role_content_flow {
+    background-color: #fff;
+    margin-top: 4px;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 100%;
+  }
+}
+
+// delete
+.alter__flow {
+  margin-bottom: 20px;
+}
+
+.ant-card-body {
+  padding: 12px !important;
+}
+
+// add role
+.level_selected_wrap {
+  position: relative;
+  top: 5px;
+  right: 18px;
+  text-align: center;
+  float: right;
+}
+.circle__icon {
+  color: #999;
+  margin-left: 8px;
+}

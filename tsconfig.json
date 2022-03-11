@@ -24,8 +24,13 @@
     "strictFunctionTypes": false,
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["src/*"]
+    }
   },
+
   "include": [
     "src",
     "**/*.ts",

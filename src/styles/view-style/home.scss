@@ -1,0 +1,19 @@
+@import '../common.scss';
+
+.home_container {
+  background-color: $bg_home;
+  height: $height_dm;
+  padding: 8px 8px;
+  height: 100%;
+  .row_flow {
+    height: 80vh;
+    background-color: #fff;
+  }
+  .tree_row {
+    height: 100%;
+  }
+}
+
+.ant-card-body {
+  padding: 12px !important;
+}

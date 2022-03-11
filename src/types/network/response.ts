@@ -7,6 +7,6 @@ export interface responseBody<T = any> {
 
 export type requestOptions = {
   showloading?: boolean
-  showMessage?: boolean
   throwErr?: boolean
+  showMessage?: boolean
 }

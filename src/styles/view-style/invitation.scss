@@ -1,0 +1,144 @@
+.invitation {
+    height: 100%;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    .invitation_title {
+        font-size: 24px;
+        color: #101010;
+        margin-top: 30px;
+        padding: 0 24px;
+        font-family: PingFangSC-regular;
+        line-height: 46px;
+    }
+    .phone-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        .left {
+            color: #8c8787;
+            font-size: 20px;
+        }
+        .right {
+            color: #8c8787;
+            font-size: 20px;
+        }
+    }
+    .content {
+        padding-top: 40px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+    .btn-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        .btn {
+            width: 120px;
+        }
+    }
+    .divider {
+        margin-top: 30px;
+    }
+    .desc {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 26px;
+        .item {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+            .left {
+                color: #8c8787;
+                font-size: 16px;
+            }
+            .right {
+                color: #8c8787;
+                margin-left: 16px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .invitation {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        overflow: hidden;
+        .invitation_title {
+            font-size: 24px;
+            color: #101010;
+            margin-top: 40px;
+            padding: 0 24px;
+            font-family: PingFangSC-regular;
+            line-height: 46px;
+        }
+        .phone-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            .left {
+                color: #8c8787;
+                font-size: 20px;
+            }
+            .right {
+                color: #8c8787;
+                font-size: 20px;
+            }
+        }
+        .content {
+            padding-top: 40px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .btn {
+            margin-top: 30px;
+        }
+        .btn-wrap {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 80%;
+            .btn {
+                margin-bottom: 20px;
+            }
+        }
+        .divider {
+            margin-top: 30px;
+        }
+        .desc {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0 0 26px;
+            .item {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin-top: 20px;
+                .left {
+                    color: #8c8787;
+                    font-size: 16px;
+                }
+                .right {
+                    color: #8c8787;
+                    margin-left: 16px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

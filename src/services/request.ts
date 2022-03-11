@@ -28,7 +28,6 @@ export function request(url: string, method: Method, data?: object, options?: re
         }
       })
       .catch((err: any) => {
-        console.log(showMessage)
         if (showMessage) message.warn(JSON.stringify(err.message), 2.5)
         rootStore.loadingInstance.remove_loading()
         // if ([errorCode.SessionInvalidError, errorCode.SessionNotFoundError].indexOf(err.statusCode) != -1) {
