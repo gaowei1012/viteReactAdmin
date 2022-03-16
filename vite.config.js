@@ -25,7 +25,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 6001,
+    port: 1024,
     open: true,
   },
   resolve: {
