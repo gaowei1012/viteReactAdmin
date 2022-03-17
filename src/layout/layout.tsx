@@ -9,16 +9,18 @@ const DefaultLayout: React.FC<{
   appSider?: React.ReactElement
   appHeader?: React.ReactElement
   routeOutlet: React.ReactElement
+  isStyle?: boolean
 }> = props => {
-  const { appSider, routeOutlet, appHeader } = props
+  const { appSider, routeOutlet, appHeader, isStyle } = props
   const { layoutInstance } = useStore()
+  const _marginLeft = !layoutInstance.getCollapsedState() ? 200 : 80
   return (
     <Layout hasSider>
       {appSider}
       <Layout
         style={{
           minHeight: '100vh',
-          marginLeft: !layoutInstance.getCollapsedState() ? 200 : 80,
+          marginLeft: isStyle ? 0 : _marginLeft,
         }}
       >
         {appHeader}

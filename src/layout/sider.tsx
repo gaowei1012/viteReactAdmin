@@ -38,7 +38,6 @@ const AppSider: React.FC<{
   return (
     <Sider theme='light' trigger={null} collapsible collapsed={collapsed} style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0, top: 0, bottom: 0 }}>
       <div className='logo'>
-        logo
         {/* <img className='img' onClick={() => goBackHome()} src={logo} alt={logoTitle} /> */}
         <span style={{ fontSize: '14px' }}>{logoTitle}</span>
       </div>

@@ -23,27 +23,27 @@ const ViewRoutes = observer(() => {
       }
     })
 
+    // 加载header头部
     const renderHeader = () => {
-      return <>{obj['header'] ? <AppHeader collapsed={layoutInstance.getCollapsedState()} layoutRight={<AppHeaderRightElement />} /> : <></>}</>
+      return <>{obj['header'] ? <AppHeader isStyle={obj['is_style']} collapsed={layoutInstance.getCollapsedState()} layoutRight={<AppHeaderRightElement />} /> : <></>}</>
     }
 
+    // 加载左侧sider
     const renderSider = () => {
       return <>{obj['sider'] ? <AppSider collapsed={layoutInstance.getCollapsedState()} logoTitle={layoutInstance.getLogoTitle()} /> : <></>}</>
     }
 
-    return <DefaultLayout appHeader={renderHeader()} appSider={renderSider()} routeOutlet={<Outlet />} />
+    return <DefaultLayout isStyle={obj['is_style']} appHeader={renderHeader()} appSider={renderSider()} routeOutlet={<Outlet />} />
   }
-  const renderRoute = () => {
-    return (
-      <Routes>
-        <Route path='/' element={renderDefaultLayout()}>
-          {routes.map((route: { sider: boolean; path: string; element: any; header: boolean }, idx: number) => {
-            return <Route key={idx} path={route.path} element={route.element} />
-          })}
-        </Route>
-      </Routes>
-    )
-  }
+  const renderRoute = () => (
+    <Routes>
+      <Route path='/' element={renderDefaultLayout()}>
+        {routes.map((route: { sider: boolean; path: string; element: any; header: boolean }, idx: number) => {
+          return <Route key={idx} path={route.path} element={route.element} />
+        })}
+      </Route>
+    </Routes>
+  )
   return <>{renderRoute()}</>
 })
 
