@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStore } from '@/hooks/useStore'
-import { Layout } from 'antd'
+import { Layout, Spin } from 'antd'
 import '@/styles/layout.scss'
 
 const { Content } = Layout
@@ -12,7 +12,7 @@ const DefaultLayout: React.FC<{
   isStyle?: boolean
 }> = props => {
   const { appSider, routeOutlet, appHeader, isStyle } = props
-  const { layoutInstance } = useStore()
+  const { layoutInstance, loadingInstance } = useStore()
   const _marginLeft = !layoutInstance.getCollapsedState() ? 200 : 80
   return (
     <Layout hasSider>
@@ -24,7 +24,11 @@ const DefaultLayout: React.FC<{
         }}
       >
         {appHeader}
-        <Content>{routeOutlet}</Content>
+        <Content className='app-content'>
+          <Spin wrapperClassName='spin-wrap' spinning={loadingInstance.loading}>
+            {routeOutlet}
+          </Spin>
+        </Content>
       </Layout>
     </Layout>
   )

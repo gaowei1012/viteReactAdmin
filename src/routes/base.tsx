@@ -11,7 +11,7 @@ import AppHeader from '@/layout/header'
 import AppHeaderRightElement from '@/layout/headerRight'
 import _ from 'lodash'
 
-const ViewRoutes = observer(() => {
+const BaseRoutes = observer(() => {
   const { layoutInstance } = useStore()
   const location = useLocation()
   const renderDefaultLayout = () => {
@@ -47,4 +47,4 @@ const ViewRoutes = observer(() => {
   return <>{renderRoute()}</>
 })
 
-export default ViewRoutes
+export default BaseRoutes
