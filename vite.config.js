@@ -36,4 +36,8 @@ export default defineConfig({
       },
     ],
   },
+  build: {
+    // 编译相关的，优化项目
+    cssCodeSplit: true, // css代码分割
+  },
 })
