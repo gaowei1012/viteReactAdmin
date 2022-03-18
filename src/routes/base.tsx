@@ -16,7 +16,7 @@ const BaseRoutes = observer(() => {
   const renderDefaultLayout = () => {
     let obj: any = {}
     _.map(routes, r => {
-      if (r.path == location.pathname) {
+      if (new RegExp('^' + r.path.replace(/:(\w+)/g, '\\w+') + '$').test(location.pathname)) {
         obj = r
         return obj
       }
