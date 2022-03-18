@@ -4,9 +4,9 @@ import Home from '@/pages/home'
 type defaultViewRoutesType = {
   path: string
   element: React.ReactElement | undefined
-  header: boolean
+  header: boolean // 是否展示头部
   is_style: boolean // 显示特定样式
-  sider: boolean
+  sider: boolean // 是否显示左侧菜单
 }
 
 const routes: Array<defaultViewRoutesType> = [

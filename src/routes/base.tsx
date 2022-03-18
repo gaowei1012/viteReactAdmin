@@ -8,7 +8,6 @@ import AppSider from '@/layout/sider'
 import { observer } from 'mobx-react-lite'
 import { useStore } from '@/hooks/useStore'
 import AppHeader from '@/layout/header'
-import AppHeaderRightElement from '@/layout/headerRight'
 import _ from 'lodash'
 
 const BaseRoutes = observer(() => {
@@ -25,7 +24,7 @@ const BaseRoutes = observer(() => {
 
     // 加载header头部
     const renderHeader = () => {
-      return <>{obj['header'] ? <AppHeader isStyle={obj['is_style']} collapsed={layoutInstance.getCollapsedState()} layoutRight={<AppHeaderRightElement />} /> : <></>}</>
+      return <>{obj['header'] ? <AppHeader isStyle={obj['is_style']} collapsed={layoutInstance.getCollapsedState()} {...obj} /> : <></>}</>
     }
 
     // 加载左侧sider
@@ -33,7 +32,7 @@ const BaseRoutes = observer(() => {
       return <>{obj['sider'] ? <AppSider collapsed={layoutInstance.getCollapsedState()} logoTitle={layoutInstance.getLogoTitle()} /> : <></>}</>
     }
 
-    return <DefaultLayout isStyle={obj['is_style']} appHeader={renderHeader()} appSider={renderSider()} routeOutlet={<Outlet />} />
+    return <DefaultLayout appHeader={renderHeader()} appSider={renderSider()} routeOutlet={<Outlet />} {...obj} />
   }
   const renderRoute = () => (
     <Routes>
